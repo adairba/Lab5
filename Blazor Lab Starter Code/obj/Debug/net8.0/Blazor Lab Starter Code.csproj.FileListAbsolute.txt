@@ -1,0 +1,23 @@
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\bin\Debug\net8.0\Blazor Lab Starter Code.exe
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\bin\Debug\net8.0\Data\Books.csv
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\bin\Debug\net8.0\Data\Users.csv
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\bin\Debug\net8.0\Blazor Lab Starter Code.deps.json
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\bin\Debug\net8.0\Blazor Lab Starter Code.runtimeconfig.json
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\bin\Debug\net8.0\Blazor Lab Starter Code.dll
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\bin\Debug\net8.0\Blazor Lab Starter Code.pdb
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.AssemblyInfoInputs.cache
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.AssemblyInfo.cs
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.csproj.CoreCompileInputs.cache
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.dll
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\obj\Debug\net8.0\refint\Blazor Lab Starter Code.dll
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.pdb
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.genruntimeconfig.cache
+C:\Google Drive\CSCI\_Teaching\2024 B - Fall\2910\6 - Blazor Web Development\Blazor Lab Starter Code\obj\Debug\net8.0\ref\Blazor Lab Starter Code.dll
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.AssemblyInfoInputs.cache
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.AssemblyInfo.cs
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.csproj.CoreCompileInputs.cache
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.dll
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\refint\Blazor Lab Starter Code.dll
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.pdb

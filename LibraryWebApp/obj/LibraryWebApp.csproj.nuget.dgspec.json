@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\LibraryWebApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\LibraryWebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\LibraryWebApp.csproj",
+        "projectName": "LibraryWebApp",
+        "projectPath": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\LibraryWebApp.csproj",
+        "packagesPath": "C:\\Users\\braed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Users\\braed\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\braed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\braed\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

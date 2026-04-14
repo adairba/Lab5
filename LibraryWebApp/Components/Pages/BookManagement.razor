@@ -1,0 +1,195 @@
+@page "/books"
+@rendermode InteractiveServer
+@using LibraryWebApp.Models
+@using LibraryWebApp.Services
+@inject IJSRuntime JSRuntime
+@inject ILibraryService LibraryService
+
+<h3>Book Management</h3>
+
+@if (books == null)
+{
+    <p><em>Loading books...</em></p>
+}
+else
+{
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5>Add New Book</h5>
+            <EditForm Model="@newBook" OnValidSubmit="HandleSubmit" FormName="BookForm">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger" />
+
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <InputText @bind-Value="newBook.Title" class="form-control" placeholder="Title" />
+                    </div>
+                    <div class="col-md-3">
+                        <InputText @bind-Value="newBook.Author" class="form-control" placeholder="Author" />
+                    </div>
+                    <div class="col-md-3">
+                        <InputText @bind-Value="newBook.ISBN" class="form-control" placeholder="ISBN" />
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-success">
+                            @((isEditing) ? "Update Book" : "Add Book")
+                        </button>
+
+                        @if (isEditing)
+                        {
+                            <button type="button" class="btn btn-secondary w-100 mt-2" @onclick="CancelEdit">
+                                Cancel
+                            </button>
+                        }
+                    </div>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in books)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.ISBN</td>
+
+                    <td>@(book.IsBorrowed ? "Borrowed" : "Available")</td>
+
+                    <td>
+                        <div class="d-flex align-items-center gap-2">
+                            @if (!book.IsBorrowed)
+                            {
+                                <select @bind="selectedUserIds[book.Id]" class="form-select form-select-sm" style="width: 150px;">
+                                    <option value="0">Select User...</option>
+                                    @foreach (var user in users)
+                                    {
+                                        <option value="@user.Id">@user.Name</option>
+                                    }
+                                </select>
+                                <button class="btn btn-info btn-sm" @onclick="() => HandleBorrow(book.Id)">Borrow</button>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary me-2">Borrowed</span>
+                                <button class="btn btn-warning btn-sm" @onclick="() => HandleReturn(book.Id)">Return</button>
+                            }
+
+                            <button class="btn btn-primary btn-sm" @onclick="() => LoadBookForEdit(book)">Edit</button>
+                            <button class="btn btn-danger btn-sm" @onclick="() => HandleDelete(book.Id)">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Book> books = new List<Book>();
+    private Book newBook = new Book(); // Holds data for the "Add" form
+    private List<User> users = new List<User>(); // To populate the dropdown
+    private Dictionary<int, int> selectedUserIds = new Dictionary<int, int>(); // To track selection per book
+
+    private bool isEditing = false;
+
+    protected override void OnInitialized()
+    {
+        RefreshData();
+    }
+
+    private void RefreshData()
+    {
+        LibraryService.ReadBooks();
+        LibraryService.ReadUsers();
+        books = LibraryService.Books;
+        users = LibraryService.Users;
+
+        // Ensure EVERY book has a slot in the dictionary
+        if (books != null)
+        {
+            foreach (var book in books)
+            {
+                if (!selectedUserIds.ContainsKey(book.Id))
+                {
+                    selectedUserIds.Add(book.Id, 0); // Use .Add to be explicit
+                }
+            }
+        }
+    }
+
+
+    private void LoadBookForEdit(Book book)
+    {
+        // 1. Fill the form with the book's current data
+        newBook = book;
+        // 2. Set the flag so our button knows to "Update" instead of "Add"
+        isEditing = true;
+        
+    }
+
+    private void HandleSubmit()
+    {
+        if (isEditing)
+        {
+            // Use that EditBook method you just wrote!
+            LibraryService.EditBook(newBook);
+            isEditing = false;
+        }
+        else
+        {
+            LibraryService.AddBook(newBook);
+        }
+
+        newBook = new Book(); // Clear the form
+        RefreshData();
+    }
+
+    private void HandleDelete(int id)
+    {
+        LibraryService.DeleteBook(id);
+        RefreshData();
+    }
+    
+    private void HandleBorrow(int bookId)
+    {
+        int userId = selectedUserIds[bookId];
+    
+        if (userId > 0)
+        {
+            // This calls the logic in your LibraryService.cs
+            LibraryService.BorrowBook(userId, bookId);
+        
+            // Clear the selection after borrowing
+            selectedUserIds[bookId] = 0;
+            RefreshData();
+
+            Console.WriteLine($"Borrowing book {bookId} for user {userId}");
+        }
+    }
+
+    private void HandleReturn(int bookId)
+    {
+        // 1. Call the service to update the CSV to 'false'
+        LibraryService.ReturnBook(bookId);
+    
+        // 2. Refresh the UI so the Borrow button comes back
+        RefreshData();
+    }
+
+    private void CancelEdit()
+    {
+        newBook = new Book(); // Clears the form
+        isEditing = false; // Flips the button text back to "Add Book"
+    }
+}

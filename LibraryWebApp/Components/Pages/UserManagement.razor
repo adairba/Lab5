@@ -1,0 +1,140 @@
+@page "/users"
+@rendermode InteractiveServer
+@using LibraryWebApp.Models
+@using LibraryWebApp.Services
+@inject ILibraryService LibraryService
+
+<h3>User Management</h3>
+
+@if (users == null)
+{
+    <p><em>Loading users...</em></p>
+}
+else
+{
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">@(isEditing ? "Edit User" : "Add New User")</h5>
+    
+            <EditForm Model="@newUser" OnValidSubmit="HandleSubmit">
+                @* This MUST be here for validation to work *@
+                <DataAnnotationsValidator />
+
+                <div class="row g-3">
+                    <div class="col-md-5">
+                        <label class="form-label">Name</label>
+                        <InputText @bind-Value="newUser.Name" class="form-control" placeholder="Full Name" />
+                        @* Shows the "Name is required" message *@
+                        <ValidationMessage For="@(() => newUser.Name)" class="text-danger" />
+                    </div>
+            
+                    <div class="col-md-5">
+                        <label class="form-label">Email</label>
+                        <InputText @bind-Value="newUser.Email" class="form-control" placeholder="user@example.com" />
+                        @* Shows the "Invalid email format" message *@
+                        <ValidationMessage For="@(() => newUser.Email)" class="text-danger" />
+                    </div>
+            
+                    <div class="col-md-2 d-flex align-items-end">
+                        <button type="submit" class="btn @(isEditing ? "btn-warning" : "btn-success") w-100">
+                            @((isEditing) ? "Update" : "Add")
+                        </button>
+                    </div>
+                </div>
+
+                @if (isEditing)
+                {
+                    <div class="mt-2">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" @onclick="CancelEdit">
+                            Cancel Edit
+                        </button>
+                    </div>
+                }
+            </EditForm>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => LoadUserForEdit(user)">Edit</button>
+                        <button class="btn btn-danger" @onclick="() => HandleDelete(user.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<User> users = new List<User>();
+    private User newUser = new User();
+    private bool isEditing = false;
+
+    protected override void OnInitialized()
+    {
+        RefreshData();
+    }
+
+    private void RefreshData()
+    {
+        LibraryService.ReadUsers();
+        users = LibraryService.Users;
+    }
+
+
+
+
+    private void LoadUserForEdit(User user)
+    {
+        // Create a copy so we don't accidentally edit the list in real-time
+        newUser = new User
+        {
+            Id = user.Id,
+            Name = user.Name,
+            Email = user.Email
+        };
+        isEditing = true;
+    }
+
+    private void CancelEdit()
+    {
+        newUser = new User();
+        isEditing = false;
+    }
+
+    private void HandleSubmit()
+    {
+        if (isEditing)
+        {
+            LibraryService.EditUser(newUser);
+            isEditing = false;
+        }
+        else
+        {
+            LibraryService.AddUser(newUser);
+        }
+    
+        newUser = new User(); // Reset form
+        RefreshData(); // Reload the list from the service
+    }
+
+
+    private void HandleDelete(int id)
+    {
+        LibraryService.DeleteUser(id);
+        RefreshData();
+    }
+}
