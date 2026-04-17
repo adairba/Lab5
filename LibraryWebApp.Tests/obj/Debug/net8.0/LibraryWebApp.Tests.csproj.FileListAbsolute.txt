@@ -1,0 +1,8 @@
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\LibraryWebApp.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_LibraryWebApp.Tests
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\LibraryWebApp.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_LibraryWebApp.Tests
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\LibraryWebApp.Tests\obj\Debug\net8.0\LibraryWebApp.Tests.csproj.AssemblyReference.cache
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\LibraryWebApp.Tests\obj\Debug\net8.0\LibraryWebApp.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\LibraryWebApp.Tests\obj\Debug\net8.0\LibraryWebApp.Tests.AssemblyInfoInputs.cache
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\LibraryWebApp.Tests\obj\Debug\net8.0\LibraryWebApp.Tests.AssemblyInfo.cs
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\LibraryWebApp.Tests\obj\Debug\net8.0\LibraryWebApp.Tests.csproj.CoreCompileInputs.cache
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\LibraryWebApp.Tests\obj\Debug\net8.0\LibraryWebApp.Tests.sourcelink.json

@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LibraryWebApp.Tests\LibraryWebApp.Tests.csproj" />
+    <ProjectReference Include="..\LibraryWebApp\LibraryWebApp.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="Data\Books.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

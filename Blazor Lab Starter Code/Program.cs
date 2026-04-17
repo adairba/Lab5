@@ -1,4 +1,6 @@
-﻿namespace Blazor_Lab_Starter_Code {
+﻿using LibraryWebApp.Models;
+
+namespace Blazor_Lab_Starter_Code {
 	class Program {
 
 		static List<Book> books = new List<Book>();

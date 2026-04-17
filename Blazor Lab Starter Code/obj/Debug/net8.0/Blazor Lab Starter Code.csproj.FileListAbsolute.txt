@@ -21,3 +21,5 @@ C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for Server
 C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.dll
 C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\refint\Blazor Lab Starter Code.dll
 C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.pdb
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.csproj.AssemblyReference.cache
+C:\Users\braed\OneDrive - East Tennessee State University\Coding labs for ServerSide\Lab5\Blazor Lab Starter Code\obj\Debug\net8.0\Blazor Lab Starter Code.sourcelink.json
