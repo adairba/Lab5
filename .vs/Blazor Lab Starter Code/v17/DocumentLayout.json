@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{33E2221C-4629-4AAB-90E2-BDA7DB4905B1}|LibraryWebApp\\LibraryWebApp.csproj|c:\\users\\braed\\onedrive - east tennessee state university\\coding labs for serverside\\lab5\\librarywebapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33E2221C-4629-4AAB-90E2-BDA7DB4905B1}|LibraryWebApp\\LibraryWebApp.csproj|solutionrelative:librarywebapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33E2221C-4629-4AAB-90E2-BDA7DB4905B1}|LibraryWebApp\\LibraryWebApp.csproj|c:\\users\\braed\\onedrive - east tennessee state university\\coding labs for serverside\\lab5\\librarywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33E2221C-4629-4AAB-90E2-BDA7DB4905B1}|LibraryWebApp\\LibraryWebApp.csproj|solutionrelative:librarywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\Components\\App.razor",
+              "RelativeDocumentMoniker": "LibraryWebApp\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\Components\\App.razor",
+              "RelativeToolTip": "LibraryWebApp\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-17T04:12:39.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\Program.cs",
               "RelativeDocumentMoniker": "LibraryWebApp\\Program.cs",
@@ -35,7 +52,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\Blazor Lab Starter Code\\Program.cs",
               "RelativeDocumentMoniker": "Blazor Lab Starter Code\\Program.cs",
@@ -43,8 +60,7 @@
               "RelativeToolTip": "Blazor Lab Starter Code\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T03:20:28.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-17T03:20:28.557Z"
             }
           ]
         }
