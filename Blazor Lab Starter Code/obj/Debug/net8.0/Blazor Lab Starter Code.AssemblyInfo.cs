@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Blazor Lab Starter Code")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44d467e6b6e3e3bf85c87df6ebff7a32a4e40a1f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+360e9c2ddfc45c4c645cba0401d6e1816054b82c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blazor Lab Starter Code")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Blazor Lab Starter Code")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -84,7 +84,7 @@ namespace LibraryWebApp.Services
         public void EditBook(Book updatedBook)
         {
             var existing = Books.FirstOrDefault(b => b.Id == updatedBook.Id);
-            if (existing != null)
+            if (existing == null)
             {
                 existing.Title = updatedBook.Title;
                 existing.Author = updatedBook.Author;

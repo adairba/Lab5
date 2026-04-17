@@ -18,7 +18,7 @@ namespace LibraryWebApp.Models
         public string Author { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "ISBN is required")]
-        [StringLength(13, MinimumLength = 10, ErrorMessage = "ISBN must be 10-13 characters")]
+        [StringLength(13, MinimumLength = 10, ErrorMessage ="ISBN must be 10-13 characters")]
         public string ISBN { get; set; } = string.Empty;
 
         public bool IsBorrowed { get; set; } = false;
