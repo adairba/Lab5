@@ -18,16 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -38,8 +30,7 @@
               "RelativeToolTip": "LibraryWebApp\\Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T03:20:37.611Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-17T03:20:37.611Z"
             },
             {
               "$type": "Document",

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58813ED2-D821-4BC6-848A-AC29A3487478}|Blazor Lab Starter Code\\Blazor Lab Starter Code.csproj|c:\\users\\braed\\onedrive - east tennessee state university\\coding labs for serverside\\lab5\\blazor lab starter code\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58813ED2-D821-4BC6-848A-AC29A3487478}|Blazor Lab Starter Code\\Blazor Lab Starter Code.csproj|solutionrelative:blazor lab starter code\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33E2221C-4629-4AAB-90E2-BDA7DB4905B1}|LibraryWebApp\\LibraryWebApp.csproj|c:\\users\\braed\\onedrive - east tennessee state university\\coding labs for serverside\\lab5\\librarywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33E2221C-4629-4AAB-90E2-BDA7DB4905B1}|LibraryWebApp\\LibraryWebApp.csproj|solutionrelative:librarywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33E2221C-4629-4AAB-90E2-BDA7DB4905B1}|LibraryWebApp\\LibraryWebApp.csproj|c:\\users\\braed\\onedrive - east tennessee state university\\coding labs for serverside\\lab5\\librarywebapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33E2221C-4629-4AAB-90E2-BDA7DB4905B1}|LibraryWebApp\\LibraryWebApp.csproj|solutionrelative:librarywebapp\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58813ED2-D821-4BC6-848A-AC29A3487478}|Blazor Lab Starter Code\\Blazor Lab Starter Code.csproj|c:\\users\\braed\\onedrive - east tennessee state university\\coding labs for serverside\\lab5\\blazor lab starter code\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58813ED2-D821-4BC6-848A-AC29A3487478}|Blazor Lab Starter Code\\Blazor Lab Starter Code.csproj|solutionrelative:blazor lab starter code\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,29 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "LibraryWebApp\\Models\\Book.cs",
-              "ToolTip": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\Models\\Book.cs",
-              "RelativeToolTip": "LibraryWebApp\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryWebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\LibraryWebApp\\Program.cs",
+              "RelativeToolTip": "LibraryWebApp\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T03:20:37.611Z"
+              "WhenOpened": "2026-04-17T03:59:31.974Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\Blazor Lab Starter Code\\Program.cs",
               "RelativeDocumentMoniker": "Blazor Lab Starter Code\\Program.cs",
               "ToolTip": "C:\\Users\\braed\\OneDrive - East Tennessee State University\\Coding labs for ServerSide\\Lab5\\Blazor Lab Starter Code\\Program.cs",
               "RelativeToolTip": "Blazor Lab Starter Code\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-17T03:20:28.557Z",
               "EditorCaption": ""
